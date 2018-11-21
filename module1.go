@@ -25,9 +25,9 @@ func multi_return(a int, b string) (string, int, int){
 
 // Named return values
 // Naked return
-func try_named(x, y int, z1 string)(name1 string, name2 int){
-	name1 = 5
-	name2 = "named Return"
+func try_named()(name1 string, name2 int){
+	name2 = 5
+	name1 = "named Return"
 	return
 }
 
@@ -42,6 +42,6 @@ func main(){
 	x, y, z := multi_return(10, "Tej") // Declaration and Assignment of new variables within a function
 	fmt.Println(x, y, z)
 	fmt.Println(i, m, n, p, c, d, e)
-	a1, a2 := try_named(98, 99, "returned")
+	a1, a2 := try_named()
 	fmt.Println(a1, a2)
 }
