@@ -26,6 +26,7 @@ func multi_return(a int, b string) (string, int, int){
 // Named return values
 // Naked return
 func try_named()(name1 string, name2 int){
+	
 	name2 = 5
 	name1 = "named Return"
 	return
