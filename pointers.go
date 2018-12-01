@@ -1,7 +1,10 @@
+/* Pointers */
+
 package main 
 
 import "fmt" 
 
+// Unlike C, Go has no pointer arithmetic
 var ptr *int
 var p = 10
 
