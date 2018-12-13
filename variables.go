@@ -22,8 +22,7 @@ var n, p int = 10, 20
 var c, d, e = 1, 2.93, "String!" 
 
 
-func main()
-{
+func main(){
 	fmt.Println(i, m, n, p, c, d, e)
 
 	new_variable := "Hi, I'm the new member"

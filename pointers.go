@@ -24,6 +24,16 @@ func main(){
 	str = "String"
 	dlt = &str
 	fmt.Println("The assigned string is", *dlt)
+
+	/*
+
+	//gives a panic
+
+	var temp *int
+	*temp = 100
+	fmt.Println("Hello temp", *temp)
+
+	*/
 }
 
 // Refer : https://dave.cheney.net/2014/03/17/pointers-in-go
