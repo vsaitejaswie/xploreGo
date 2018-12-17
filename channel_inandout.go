@@ -13,10 +13,12 @@ func main(){
 
 	in <- n
 
-	fmt.Println(<-out)
+	fmt.Println("Doubled number is: ", <-out)
 }
 
 func double_it(in <-chan int, out chan<- int){
-	x := <-in*2
-	out <- x
+
+	fmt.Println("Goroutine is initializing.........")
+
+	out <- (<-in*2)
 }
